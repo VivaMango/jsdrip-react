@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Image } from "react-bootstrap";
 import "./AboutPage.css";
+import Headshot from "../../images/cropped-headshot.jpg";
 
 class AboutPage extends Component {
  
@@ -9,7 +11,7 @@ class AboutPage extends Component {
            <h1 className="mt-4">
                Who is Alex Schwartz?
             </h1> 
-            <img src="#" className="col-md-2 rounded float-left img-thumbnail m-3" alt="Alex's Headshot" />
+            <Image src={Headshot} alt="Alex's Headshot" rounded />
             <div className="col-md-fill">
                 <p 
                 id="p1bio"
