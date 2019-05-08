@@ -1,10 +1,11 @@
 import React from 'react';
 import { Jumbotron, Button, Container } from 'react-bootstrap';
+import "./Headertron.css";
 
 
 const Headertron = props => (
     <Container>
-        <Jumbotron>
+        <Jumbotron className="headertron">
             <h1>Welcome to JSDrip!</h1>
             <p>The Personal Blog and Portfolio of Alex Schwartz</p>
             <p>Alex is currently at Google I/O 2019! This page will be live after the conference!</p>
