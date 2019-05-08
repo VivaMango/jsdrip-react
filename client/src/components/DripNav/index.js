@@ -22,9 +22,7 @@ class DripNav extends Component {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="https://www.linkedin.com/in/alex-schwartz-05409790/" target="_blank">Alex on LinkedIn</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="https://www.youtube.com/channel/UCxVHCnBXwA2E1d_zHWB52eg" target="_blank">Alex on YouTube</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="../../download/alex_schwartz_resume.pdf" target="_blank" download>Download Alex's Resume</NavDropdown.Item> 
+                            <NavDropdown.Item href="https://www.youtube.com/channel/UCxVHCnBXwA2E1d_zHWB52eg" target="_blank">Alex on YouTube</NavDropdown.Item> 
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
