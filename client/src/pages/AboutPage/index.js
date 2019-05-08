@@ -11,7 +11,7 @@ class AboutPage extends Component {
            <h1 className="mt-4">
                Who is Alex Schwartz?
             </h1> 
-            <Image src={Headshot} alt="Alex's Headshot" rounded />
+            <Image src={Headshot} alt="Alex's Headshot" roundedCircle fluid />
             <div className="col-md-fill">
                 <p 
                 id="p1bio"
