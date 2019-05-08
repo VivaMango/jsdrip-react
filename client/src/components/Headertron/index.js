@@ -7,7 +7,8 @@ const Headertron = props => (
         <Jumbotron>
             <h1>Welcome to JSDrip!</h1>
             <p>The Personal Blog and Portfolio of Alex Schwartz</p>
-            <Button variant="primary">Learn more</Button>
+            <p>Alex is currently at Google I/O 2019! This page will be live after the conference!</p>
+            <p>If you met Alex at I/O 2019, make sure to sign the guest log while visiting this site!</p>
         </Jumbotron>
     </Container>
 );

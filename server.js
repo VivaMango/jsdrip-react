@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require("mongoose");
 require('dotenv').config();
 
-const MONGODB_URI = "mongodb://localhost/jsdriplocal";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/jsdriplocal";
 const log = require("./routes/api/log");
 const project = require("./routes/api/project");
 
