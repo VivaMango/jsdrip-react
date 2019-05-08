@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import "./DripNav.css";
 
 class DripNav extends Component {
 
     render() {
 
         return (
-            <Navbar bg="light" expand="lg">
+            <Navbar className="navMaster" expand="lg">
                 <Navbar.Brand href="/">JSDrip</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

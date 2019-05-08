@@ -10,7 +10,7 @@ import {
 import DripNav from "./components/DripNav";
 
 // Pages
-import LandingPage from "./pages/LandingPage";
+import LandingPage from "./pages/LandingPage"; 
 import AboutPage from "./pages/AboutPage";
 import LogPage from "./pages/LogPage";
 import PortfolioPage from "./pages/PortfolioPage";
@@ -24,11 +24,11 @@ class App extends Component {
         <Container>
           <DripNav />
           <Switch>
-          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/" component={LogPage} />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/log" component={LogPage} />
-          <Route exact path="/portfolio" component={PortfolioPage} />
-          <Route exact path="/blog" component={BlogPage} />
+          <Route exact path="/portfolio" component={LandingPage} />
+          <Route exact path="/blog" component={LandingPage} />
           <Route exact path="/api/projectAPI" component={CreateProjectAPIPage} />
           </Switch>
         </Container>
