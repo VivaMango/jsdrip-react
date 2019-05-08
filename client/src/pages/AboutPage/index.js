@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image } from "react-bootstrap";
+import { Image, Button } from "react-bootstrap";
 import "./AboutPage.css";
 import Headshot from "../../images/cropped-headshot.jpg";
 
@@ -37,6 +37,7 @@ class AboutPage extends Component {
                 >Following the decline of Starcraft 2 internationally, Alex transitioned into Dye-Sublimation digital printing. With a dedicated focus on technical knowledge and color management, Alex is now highly regarded as an expert in his field, having worked with international brand giants like Coca-cola, Microsoft, Sony, and more, his portfolio of satisfied clients is as extensive as it is impressive. Despite this, Alex has now discovered that his true passions lie deeper in the technical realm, with more of a focus on why software works and how to improve it, rather than just pushing existing apps to their limit. Use this website (written by Alex in Javascript using Node and React) as a way to follow Alex's journey through web developement and life! Check back soon for more content including blog posts, video demos, and more!
                 </p>
             </div>
+            <Button className="redirectBtn" href="/log" variant="info">Visit the Guest Log</Button>
        </main>
         );
     };
