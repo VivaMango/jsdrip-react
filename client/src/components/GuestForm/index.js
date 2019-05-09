@@ -51,7 +51,7 @@ class GuestForm extends Component {
                 <Form.Label>Leave a message from Google I/O 2019!</Form.Label>
                 <Form.Control as="textarea" rows="3" ref="messageForm"/>
                 </Form.Group>
-                <Button onClick={this.handleCreateLog} variant="info" type="submit">
+                <Button onClick={this.handleCreateLog} className="createLogBtn" variant="info" type="submit">
                     Sign Guest Log
                 </Button>
             </Form>
