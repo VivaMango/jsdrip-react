@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Container } from "react-bootstrap";
 import API from "../../utils/API";
+import TextContainer from "../TextContainer";
+import "./GuestForm.css";
 
 class GuestForm extends Component {
 
@@ -34,6 +36,8 @@ class GuestForm extends Component {
 
     render() {
         return (
+            <Container className="guestForm">
+            <TextContainer textVal="Thanks for meeting Alex at Google I/O 2019! Please sign the Guest Log if you'd like to keep in touch with Alex!" />
             <Form>
                 <Form.Group controlId="formName">
                     <Form.Label>Sign your name</Form.Label>
@@ -47,10 +51,11 @@ class GuestForm extends Component {
                 <Form.Label>Leave a message from Google I/O 2019!</Form.Label>
                 <Form.Control as="textarea" rows="3" ref="messageForm"/>
                 </Form.Group>
-                <Button onClick={this.handleCreateLog} variant="primary" type="submit">
+                <Button onClick={this.handleCreateLog} className="createLogBtn" variant="info" type="submit">
                     Sign Guest Log
                 </Button>
             </Form>
+            </Container>
         )
     };
 };

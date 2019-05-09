@@ -1,0 +1,11 @@
+.guestForm {
+    /* color: white; */
+    font-size: 18px;
+    background-color: #66b2b2;
+    border-radius: 15px;
+}
+
+.createLogBtn {
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
