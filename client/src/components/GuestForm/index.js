@@ -45,18 +45,18 @@ class GuestForm extends Component {
             (this.state.logSubmitted === true)
             ? <Redirect to="/about" />
             : <Container className="guestForm">
-            <TextContainer textVal="Thanks for visiting Alex's Portfolio! Please sign the Guest Log if you'd like to keep in touch with Alex!" />
+            <TextContainer className="guestHeader" textVal="Thanks for visiting JSDrip! Please sign the Guest Log if you'd like to keep in touch with Alex!" />
             <Form>
                 <Form.Group controlId="formName">
-                    <Form.Label>Sign your name</Form.Label>
+                    <Form.Label className="formLabel">Sign your name</Form.Label>
                     <Form.Control type="text" placeholder="Your Name" ref="nameForm"/>
                 </Form.Group>
                 <Form.Group controlId="formContact">
-                    <Form.Label>How should I keep in touch with you?</Form.Label>
+                    <Form.Label className="formLabel">How should Alex keep in touch with you?</Form.Label>
                     <Form.Control type="text" placeholder="Your Preferred Contact Method" ref="contactForm"/>
                 </Form.Group>
                 <Form.Group controlId="formMessage">
-                <Form.Label>Leave a message from Google I/O 2019!</Form.Label>
+                <Form.Label className="formLabel">Leave a message for Alex!</Form.Label>
                 <Form.Control as="textarea" rows="3" ref="messageForm"/>
                 </Form.Group>
                 <Button onClick={this.handleCreateLog} className="createLogBtn" variant="info" type="submit">

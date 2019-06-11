@@ -2,3 +2,21 @@
     background-color: #66b2b2;
     border-radius: 15px;
 }
+
+.logLinkBtn {
+    border-width: 1px;
+    border-color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.headertronHeader {
+    font-family: 'Knewave', cursive;
+}
+
+.headertronBody {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}

@@ -8,15 +8,15 @@ class AboutPage extends Component {
     render () {
         return (
         <main className="textMain container pb-5 mb-5"> 
-           <h1 className="mt-4">
+           <h1 className="mt-4 whoIsHeader">
                Who is Alex Schwartz?
             </h1> 
-            <Image src={Headshot} alt="Alex's Headshot" roundedCircle fluid />
+            <Image className="headshotPhoto" src={Headshot} alt="Alex's Headshot" roundedCircle fluid />
             <div className="col-md-fill">
                 <p 
                 id="p1bio"
                 className="ptext" 
-                >Alex is a 26 year old Full Stack Web Developer who recently finished a Full-Stack bootcamp with Georgia Tech Professional Education. He's currently attending Google I/0 2019 in Mountain View, California. 
+                >Alex is a 26 year old Full Stack Web Developer from Atlanta, Georgia who recently graduated a Full-Stack bootcamp with Georgia Tech Professional Education and attended Google I/0 2019 in Mountain View, California. He is now actively seeking new employment opportunities as a Full-Stack JavaScript + React Web Developer. 
                 </p>
                 <br />
                 <p 
@@ -34,10 +34,11 @@ class AboutPage extends Component {
                 <p
                 id="p4bio"
                 className="ptext"
-                >Following the decline of Starcraft 2 internationally, Alex transitioned into Dye-Sublimation digital printing. With a dedicated focus on technical knowledge and color management, Alex is now highly regarded as an expert in his field, having worked with international brand giants like Coca-cola, Microsoft, Sony, and more, his portfolio of satisfied clients is as extensive as it is impressive. Despite this, Alex has now discovered that his true passions lie deeper in the technical realm, with more of a focus on why software works and how to improve it, rather than just pushing existing apps to their limit. Use this website (written by Alex in Javascript using Node and React) as a way to follow Alex's journey through web developement and life! Check back soon for more content including blog posts, video demos, and more!
+                >Following the decline of Starcraft 2 internationally, Alex transitioned into Dye-Sublimation digital printing. With a dedicated focus on technical knowledge and color management, Alex is now highly regarded as an expert in his field, having worked with international brand giants like Coca-Cola, Microsoft, Sony, and more, his portfolio of satisfied clients is as extensive as it is impressive. Despite this, Alex has now discovered that his true passions lie deeper in the technical realm, with more of a focus on why software works and how to improve it, rather than just pushing existing apps to their limit. Use this website (written by Alex in Javascript using Node and React) as a way to follow Alex's journey through web developement and life! Check back soon for more content including blog posts, video demos, and more!
                 </p>
             </div>
             <Button className="redirectBtn" href="/log" variant="info">Visit the Guest Log</Button>
+            <Button className="redirectBtn" href="/portfolio" variant="info">Check Out Alex's Portfolio</Button>
        </main>
         );
     };

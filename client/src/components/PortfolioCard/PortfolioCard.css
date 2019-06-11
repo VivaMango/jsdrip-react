@@ -1,0 +1,14 @@
+.portfolioCard {
+    background-color: #66b2b2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cardBtn {
+    margin: 5px;
+    border-width: 1px;
+    border-color: black;
+}

@@ -8,4 +8,19 @@
 .createLogBtn {
     margin-top: 1px;
     margin-bottom: 10px;
+    border-width: 1px;
+    border-color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.textContainer {
+    font-family: 'Knewave', cursive;
+}
+
+.formLabel {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
 }
