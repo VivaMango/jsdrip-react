@@ -16,7 +16,9 @@ router.post("/createproject" , (req, res) => {
         image: req.body.image,
         summary: req.body.summary,
         repoLink: req.body.repoLink,
+        repoText: req.body.repoText,
         deployLink: req.body.deployLink,
+        deployText: req.body.deployText
     });
 
     newProject.save().then(event => res.json(event)).catch(err => console.log(err));

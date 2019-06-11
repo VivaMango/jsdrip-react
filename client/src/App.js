@@ -24,10 +24,10 @@ class App extends Component {
         <Container>
           <DripNav />
           <Switch>
-          <Route exact path="/" component={LogPage} />
+          <Route exact path="/" component={AboutPage} />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/log" component={LogPage} />
-          <Route exact path="/portfolio" component={LandingPage} />
+          <Route exact path="/portfolio" component={PortfolioPage} />
           <Route exact path="/blog" component={LandingPage} />
           <Route exact path="/api/projectAPI" component={CreateProjectAPIPage} />
           </Switch>

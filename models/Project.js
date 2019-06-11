@@ -15,7 +15,13 @@ const ProjectSchema = new Schema({
     repoLink: {
         type: String
     },
+    repoText: {
+        type: String
+    },
     deployLink: {
+        type: String
+    },
+    deployText: {
         type: String
     }
 }, {id: true});

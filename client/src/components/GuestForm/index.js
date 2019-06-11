@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+import { Redirect } from 'react-router-dom';
 import { Button, Form, Container } from "react-bootstrap";
 import API from "../../utils/API";
 import TextContainer from "../TextContainer";
 import "./GuestForm.css";
 
 class GuestForm extends Component {
+
+    state = {
+        logSubmitted: false
+    }
 
     consoleLogger = event => {
         event.preventDefault();
@@ -26,6 +31,7 @@ class GuestForm extends Component {
             message: this.refs.messageForm.value
         }).then(res => {
             console.log(res.data);
+            this.setState({logSubmitted: true})
         }).catch(err => console.log(err));
     };
 
@@ -36,8 +42,10 @@ class GuestForm extends Component {
 
     render() {
         return (
-            <Container className="guestForm">
-            <TextContainer textVal="Thanks for meeting Alex at Google I/O 2019! Please sign the Guest Log if you'd like to keep in touch with Alex!" />
+            (this.state.logSubmitted === true)
+            ? <Redirect to="/about" />
+            : <Container className="guestForm">
+            <TextContainer textVal="Thanks for visiting Alex's Portfolio! Please sign the Guest Log if you'd like to keep in touch with Alex!" />
             <Form>
                 <Form.Group controlId="formName">
                     <Form.Label>Sign your name</Form.Label>
