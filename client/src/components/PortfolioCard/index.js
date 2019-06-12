@@ -11,8 +11,8 @@ function PortfolioCard(props) {
                 <Card.Text>
                     {props.summary}
                 </Card.Text>
-                <Button className="cardBtn btn-lg" variant="info"><i class="fab fa-github"></i> {props.buttonOneText}</Button>
-                <Button className="cardBtn btn-lg" variant="info">{props.buttonTwoText} <i class="fas fa-caret-square-right"></i></Button>
+                <Button href={props.buttonOneLink} target="_blank" className="cardBtn btn-lg" variant="info"><i class="fab fa-github"></i> {props.buttonOneText}</Button>
+                <Button href={props.buttonTwoLink} target="_blank" className="cardBtn btn-lg" variant="info">{props.buttonTwoText} <i class="fas fa-caret-square-right"></i></Button>
             </Card.Body>
             {/* <Card.Footer>
                 <small className="text-muted">Last updated 3 mins ago</small>
