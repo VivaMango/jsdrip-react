@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CustomCardGroup from "../../components/CustomCardGroup";
+import API from "../../utils/API";
 
 import API from "../../utils/API";
 
