@@ -60,7 +60,7 @@ class GuestForm extends Component {
                 <Form.Control as="textarea" rows="3" ref="messageForm"/>
                 </Form.Group>
                 <Button onClick={this.handleCreateLog} className="createLogBtn" variant="info" type="submit">
-                    Sign Guest Log
+                <i class="fas fa-pencil-alt"></i> Sign Guest Log
                 </Button>
             </Form>
             </Container>
