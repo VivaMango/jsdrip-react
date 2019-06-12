@@ -8,7 +8,7 @@ class DripNav extends Component {
 
         return (
             <Navbar className="navMaster" expand="lg">
-                <Navbar.Brand href="/">JSDrip</Navbar.Brand>
+                <Navbar.Brand className="navBrand" href="/">JSDrip</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
