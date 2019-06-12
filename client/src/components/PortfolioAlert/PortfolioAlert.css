@@ -1,0 +1,22 @@
+.alertParent {
+    text-align: center;
+}
+
+.alertHeading {
+    font-family: 'Knewave', cursive;
+}
+
+.alertButton {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.alertText {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}

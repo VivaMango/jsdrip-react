@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import { Container } from "react-bootstrap";
+
+
 import CustomCardGroup from "../../components/CustomCardGroup";
+import PortfolioAlert from "../../components/PortfolioAlert";
+
+
 import API from "../../utils/API";
+
 
 class PortfolioPage extends Component {
 
@@ -21,16 +28,20 @@ class PortfolioPage extends Component {
  
     render() {
         return(
-        this.state.projects.map(project => {
-           return( <CustomCardGroup
-            image={project.image}
-            name={project.name}
-            summary={project.summary}
-            buttonOneLink={project.repoLink}
-            buttonOneText={project.repoText}
-            buttonTwoLink={project.deployLink}
-            buttonTwoText={project.deployText} />
-        )}))
+        <Container>
+            <PortfolioAlert />
+                {this.state.projects.map(project => {
+                    return( <CustomCardGroup
+                        image={project.image}
+                        name={project.name}
+                        summary={project.summary}
+                        buttonOneLink={project.repoLink}
+                        buttonOneText={project.repoText}
+                        buttonTwoLink={project.deployLink}
+                        buttonTwoText={project.deployText} />
+                    )})}
+            </Container> 
+        )
     };
 
 };
