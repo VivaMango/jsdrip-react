@@ -10,7 +10,9 @@ class ProjectAPIForm extends Component {
             image: this.refs.imageForm.value,
             summary: this.refs.summaryForm.value,
             repoLink: this.refs.repoLinkForm.value,
-            deployLink: this.refs.deployLinkForm.value
+            repoText: this.refs.repoTextForm.value,
+            deployLink: this.refs.deployLinkForm.value,
+            deployText: this.refs.deployTextForm.value
         }).then(res => {
             console.log(res.data);
         }).catch(err => console.log(err));
@@ -40,9 +42,17 @@ class ProjectAPIForm extends Component {
                     <Form.Label>Enter GitHub Repository Link</Form.Label>
                     <Form.Control type="text" placeholder="GitHub Repository" ref="repoLinkForm"/>
                 </Form.Group>
+                <Form.Group controlId="formRepoText">
+                    <Form.Label>Enter GitHub Repository Text</Form.Label>
+                    <Form.Control type="text" placeholder="GitHub Text" ref="repoTextForm"/>
+                </Form.Group>
                 <Form.Group controlId="formDeployLink">
                     <Form.Label>Enter Deployed Project Link</Form.Label>
                     <Form.Control type="text" placeholder="Deployed App" ref="deployLinkForm"/>
+                </Form.Group>
+                <Form.Group controlId="formDeployText">
+                    <Form.Label>Enter Deployed Project Text</Form.Label>
+                    <Form.Control type="text" placeholder="Deployed Text" ref="deployTextForm"/>
                 </Form.Group>
                 <Button onClick={this.handleCreateProject} variant="primary" type="submit">
                     Submit the Project to DB

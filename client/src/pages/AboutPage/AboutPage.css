@@ -3,3 +3,27 @@
     border-radius: 15px;
     text-align: center;
 }
+
+.redirectBtn {
+    margin: 5px;
+    border-width: 1px;
+    border-color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.whoIsHeader{
+    font-family: 'Knewave', cursive;
+    margin-bottom: 15px;
+}
+
+.headshotPhoto {
+    margin-bottom: 15px;
+}
+
+.ptext {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
